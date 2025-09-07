@@ -28,7 +28,7 @@ namespace BT_Event_Solution
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Event}/{action=Events}/{id?}");
 
             app.Run();
         }

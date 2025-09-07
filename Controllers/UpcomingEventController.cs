@@ -1,20 +1,15 @@
-﻿using BT_Event_Solution.Models;
+﻿using BT_Event_Solution.Utility;
 using Microsoft.AspNetCore.Mvc;
-using BT_Event_Solution.Utility;
 
 namespace BT_Event_Solution.Controllers
 {
-    public class EventController : Controller
+    public class UpcomingEventController : Controller
     {
-        public IActionResult Events()
+        public IActionResult UpcomingEvents()
         {
-            // Get the same user that we use in user controller
             var users = UserDataHelper.GetSampleUsers();
             var events = EventDataHelper.GetSampleEvents();
-
             return View(events);
-
-           
         }
     }
 }
