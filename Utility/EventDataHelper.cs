@@ -2,8 +2,13 @@
 
 namespace BT_Event_Solution.Utility
 {
-    public class EventDataHelper
+    
+    public static class EventDataHelper 
     {
+        // Static to allocate in RAM memory when initialize.
+        // Otherwise everytime its call it will take different place in memory, which is not optimal.
+        // Static also called as in memory database.
+        // Use to avoid making copy of same data.
         public static List<EventModel> GetSampleEvents()  // This method create sample event
         {
             var users = UserDataHelper.GetSampleUsers(); // importing users
