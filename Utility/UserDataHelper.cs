@@ -4,9 +4,11 @@ namespace BT_Event_Solution.Utility
 {
     public static class UserDataHelper
     {
-        public static List<UserModel> GetSampleUsers()
+        public static List<UserModel> GetSampleUsers() // Method for creating users.
         {
-            List<UserModel> users = new List<UserModel>();
+            // Ceatin a list of UserModel in users
+            //List<UserModel> users = new List<UserModel>();
+            var users = new List<UserModel>();
 
             UserModel user1 = new UserModel()
             {
@@ -51,7 +53,7 @@ namespace BT_Event_Solution.Utility
             users.Add(user3);
             users.Add(user4);
 
-            return users;
+            return users; 
 
         }
     }

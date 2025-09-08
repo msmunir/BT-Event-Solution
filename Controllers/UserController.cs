@@ -8,8 +8,10 @@ namespace BT_Event_Solution.Controllers
     {
         public IActionResult Users()
         {
-           // Get users from shared helper
-           List<UserModel> users = UserDataHelper.GetSampleUsers();
+           // Creating user object 
+           // Getting sample users form GeSampleUsers() method
+           //List<UserModel> users = UserDataHelper.GetSampleUsers();
+           var users = UserDataHelper.GetSampleUsers();
             return View(users);
         }
     }

@@ -4,10 +4,13 @@ namespace BT_Event_Solution.Utility
 {
     public class EventDataHelper
     {
-        public static List<EventModel> GetSampleEvents()
+        public static List<EventModel> GetSampleEvents()  // This method create sample event
         {
-            var users = UserDataHelper.GetSampleUsers();
-            List<EventModel> events = new List<EventModel>();
+            var users = UserDataHelper.GetSampleUsers(); // importing users
+
+            //List<EventModel> events = new List<EventModel>(); // Creating list of events object
+            var events = new List<EventModel>();
+
 
             EventModel event1 = new EventModel()
             {

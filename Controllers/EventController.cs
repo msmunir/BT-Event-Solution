@@ -8,8 +8,12 @@ namespace BT_Event_Solution.Controllers
     {
         public IActionResult Events()
         {
-            // Get the same user that we use in user controller
+            // create object for users
+            // Calling the method for sample user data
             var users = UserDataHelper.GetSampleUsers();
+
+            // create object for users
+            // Calling the method for sample user data
             var events = EventDataHelper.GetSampleEvents();
 
             return View(events);
