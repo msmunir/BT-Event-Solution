@@ -2,7 +2,7 @@
 
 namespace BT_Event_Solution.Utility
 {
-    public class EventDataHelper
+    public static class EventDataHelper
     {
         public static List<EventModel> GetSampleEvents()  // This method create sample event
         {
