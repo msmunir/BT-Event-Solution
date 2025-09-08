@@ -4,10 +4,6 @@ namespace BT_Event_Solution.Utility
 {
     public static class UserDataHelper
     {
-        // Static to allocate in RAM memory when initialize.
-        // Otherwise everytime its call it will take different place in memory, which is not optimal.
-        // Static also called as in memory database.
-        // Use to avoid making copy of same data.
         public static List<UserModel> GetSampleUsers() // Method for creating users.
         {
             // Ceatin a list of UserModel in users
